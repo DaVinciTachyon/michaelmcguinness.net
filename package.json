@@ -1,0 +1,17 @@
+{
+	"name": "michaelmcguinness.net",
+	"version": "1.0.0",
+	"description": "Personal Website.",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js",
+		"server": "node index.js"
+	},
+	"author": "davincitachyon",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.16.3",
+		"nodemon": "^1.19.4"
+	}
+}
