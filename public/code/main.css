@@ -7,16 +7,6 @@ body {
 	background-color: white;
 }
 
-a {
-	text-decoration: none;
-}
-
-.logo {
-	margin: 0;
-	padding: 2px;
-	display: inline-block;
-}
-
 .content {
 	display: grid;
 	grid-template-columns: 1fr;
