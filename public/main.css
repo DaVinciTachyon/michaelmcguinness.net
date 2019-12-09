@@ -6,20 +6,19 @@ body {
 	padding: 0;
 }
 
-form input {
-	border: none;
-}
-
-form button {
-	border: none;
-	background-color: lightgrey;
-}
-
 .content {
 	display: grid;
-	grid-auto-columns: 1fr 4fr 4fr;
-	grid-auto-rows: 2fr 2fr;
-	grid-template-areas: "profile punchcard commitactivity" "searchbox punchcard commitactivity";
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px;
+	grid-auto-rows: minmax(100px, auto);
+	grid-row-gap: 10px;
+	grid-column-gap: 20px;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+	justify-items: center;
+	align-items: center;
 }
 
 .card {
@@ -33,72 +32,6 @@ form button {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.whiteback {
-	background: white;
-}
-
-.container {
+.cardContainer {
 	padding: 2px 16px;
-}
-
-img {
-	width: 100%;
-}
-
-#profile {
-	grid-area: profile;
-}
-
-#searchbox {
-	grid-area: searchbox;
-}
-
-#punchcard {
-	grid-area: punchcard;
-}
-
-#commitactivity {
-	grid-area: commitactivity;
-}
-
-.bubbles {
-	stroke-width: 1px;
-	stroke: black;
-	opacity: .8;
-}
-
-.bubbles:hover {
-	stroke: black;
-}
-
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.toolbar {
-	width: 100vw;
-	padding: 10px;
-	margin: 0;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
-	background-color: lightblue;
-	position: fixed;
-	z-index: 1;
-}
-
-.toolbaritem {
-	background-color: inherit;
-	width: 100px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-}
-
-.toolbar a {
-	text-decoration: none;
-	color: black;
 }
