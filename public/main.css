@@ -11,7 +11,7 @@ body {
 }
 
 .typewriter h1 {
-	font-size: 3rem;
+	font-size: 7vw;
 }
 
 a {
@@ -20,8 +20,10 @@ a {
 }
 
 img {
-	height: 40px;
-	width: 40px;
+	height: 10vw;
+	width: 10vw;
+	max-height: 50px;
+	max-width: 50px;
 }
 
 .logo {
