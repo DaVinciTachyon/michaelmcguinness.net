@@ -4,12 +4,14 @@
 	"description": "Personal Website.",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js"
+		"start": "nodemon index.js"
 	},
 	"author": "davincitachyon",
 	"license": "ISC",
 	"dependencies": {
 		"dotenv": "^8.2.0",
-		"express": "^4.16.3"
+		"express": "^4.16.3",
+		"express-handlebars": "^3.1.0",
+		"nodemon": "^2.0.1"
 	}
 }

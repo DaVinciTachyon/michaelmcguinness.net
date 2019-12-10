@@ -1,13 +1,25 @@
 const express = require('express');
-
 const dotenv = require('dotenv');
+const exphbs = require('express-handlebars');
+
+const app = express();
+
 dotenv.config();
 
-// Create a new express application and use
-// the express static middleware, to serve all files
-// inside the public directory
-const app = express();
+var hbs = exphbs.create({
+	extname: '.hbs'
+});
+app.engine('.hbs', hbs.engine);
+app.set('view engine', '.hbs');
+
 app.use(express.static(__dirname + '/public'));
 
-// Start the server on port 8080
+app.get('/', function(req, res) {
+	res.render('home');
+});
+
+app.get('/code/', function(req, res) {
+	res.render('code');
+});
+
 app.listen(8080);
