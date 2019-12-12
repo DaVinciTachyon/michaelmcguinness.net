@@ -22,7 +22,7 @@ var projects = [
 	{
 		title: 'Convolutional Neural Network',
 		description:
-			'Created a simple Convolutional Neural Network from scratch using python and the MNIST database was used to train it to recognise handwritten digits.',
+			'Simple Convolutional Neural Network from scratch using python and the MNIST database was used to train it to recognise handwritten digits.',
 		link: 'https://github.com/DaVinciTachyon/NeuralNetworks',
 		image: 'brain.svg'
 	}
