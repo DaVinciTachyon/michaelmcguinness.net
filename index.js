@@ -18,8 +18,10 @@ app.get('/', function(req, res) {
 	res.render('home');
 });
 
+var projects = [];
+
 app.get('/code/', function(req, res) {
-	res.render('code');
+	res.render('code', { projects: projects });
 });
 
 app.listen(8080);

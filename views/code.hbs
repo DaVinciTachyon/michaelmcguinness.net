@@ -1,3 +1,27 @@
-<div class="card">
-    <div class="cardContainer">Under Development.</div>
+<div class="typewriter">
+    <h1 id="typedtext"></h1>
+</div>
+<div class="container">
+    {{#each projects}}
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    {{#if image }}
+                        <img src="{{ image }}">
+                    {{ else }}
+                        <img src="images/default-project.svg">
+                    {{/if}}
+                    <h3>{{ title }}</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>{{ description }}</p>
+                    {{#if link }}
+                    <a href="{{link}}">Read More</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
 </div>
