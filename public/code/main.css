@@ -3,7 +3,7 @@ body {
 	font-family: "Courier New", monospace;
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,38 +19,17 @@ body {
 }
 
 .container {
-	max-width: 1200px;
-	display: grid;
-	grid-row-gap: 0;
-	grid-column-gap: 50px;
-	justify-items: center;
-	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
-	justify-items: center;
 	align-items: center;
 }
 
-@media (min-width: 700px) {
-	.container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (min-width: 1100px) {
-	.container {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media (min-width: 1500px) {
-	.container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
 .container .card {
-	position: relative;
+	flex: 0 1 auto;
+	align-self: center;
+	margin: 20px;
 }
 
 .container .card .face {

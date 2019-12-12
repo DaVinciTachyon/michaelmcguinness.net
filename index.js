@@ -18,7 +18,15 @@ app.get('/', function(req, res) {
 	res.render('home');
 });
 
-var projects = [];
+var projects = [
+	{
+		title: 'Convolutional Neural Network',
+		description:
+			'Created a simple Convolutional Neural Network from scratch using python and the MNIST database was used to train it to recognise handwritten digits.',
+		link: 'https://github.com/DaVinciTachyon/NeuralNetworks',
+		image: 'brain.svg'
+	}
+];
 
 app.get('/code/', function(req, res) {
 	res.render('code', { projects: projects });
