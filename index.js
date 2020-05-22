@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 
 var hbs = exphbs.create({
-	extname: '.hbs'
+	extname : '.hbs'
 });
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
@@ -20,16 +20,20 @@ app.get('/', function(req, res) {
 
 var projects = [
 	{
-		title: 'Convolutional Neural Network',
-		description:
+		title       : 'Convolutional Neural Network',
+		description :
 			'Simple Convolutional Neural Network from scratch using Python, trained using the MNIST database to recognise handwritten digits.',
-		link: 'https://github.com/DaVinciTachyon/NeuralNetworks',
-		image: 'brain.svg'
+		link        : 'https://github.com/DaVinciTachyon/NeuralNetworks',
+		image       : 'brain.svg'
 	}
 ];
 
 app.get('/code/', function(req, res) {
 	res.render('code', { projects: projects });
+});
+
+app.get('/code/snake/', function(req, res) {
+	res.render('snake');
 });
 
 app.listen(8080);

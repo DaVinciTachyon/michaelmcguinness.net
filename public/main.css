@@ -3,12 +3,15 @@ body {
 	font-family: "Courier New", monospace;
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: rgb(238, 230, 218);
-	background: linear-gradient(0deg, rgba(238, 230, 218, 0.8239496482186625) 4%, rgba(252, 176, 69, 0) 129%);
+	background: linear-gradient(
+		0deg,
+		rgba(238, 230, 218, 0.8239496482186625) 4%,
+		rgba(252, 176, 69, 0) 129%
+	);
 }
 
 .typewriter h1 {

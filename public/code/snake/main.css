@@ -1,0 +1,42 @@
+body {
+	min-height: 100vh;
+	font-family: "Courier New", monospace;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	background: rgb(238, 230, 218);
+	background: linear-gradient(
+		0deg,
+		rgba(238, 230, 218, 0.8239496482186625) 4%,
+		rgba(252, 176, 69, 0) 129%
+	);
+}
+
+#snake {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 0;
+}
+
+.content {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.container .card {
+	flex: 0 1 auto;
+	align-self: center;
+	margin: 20px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
